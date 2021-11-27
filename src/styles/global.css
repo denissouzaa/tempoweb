@@ -1,0 +1,142 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #0f1419;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #FAFAFA;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #ffffff;
+    border-top: 1px solid #DBDBDB;
+  }
+
+.heightPage {
+    height: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.bgExpand {
+    background-color: #FAFAFA;
+}
+
+.bgLeve {
+    color: #555555;
+}
+
+.tagConsultor {
+    background-color: #3B49DF;
+    height: 45px;
+    color: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tagSobre {
+    height: 45px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #262626;
+}
+
+.borderCaixaCupom {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.borderCaixaCupom2 {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.borderDestaque {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+/* navbar */ 
+.menu-bar{
+    background: #FFFFFF; 
+    border-bottom: 1px solid #DBDBDB;
+}   
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-toggler {
+    border:0px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 10px;
+}
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* titulos colors */ 
+.tituloDescontos {
+    color: #0f1419;
+    font-weight: bold;
+    font-size: 18px;
+}
+.titleMaster {
+    font-weight: bold;
+}
+.titleRed {
+    color: red;
+}
+.titleTextos {
+    color: #555555;
+}
+
+.titleSecondary {
+    color: #5e5e5e;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.bgWhite {
+    background-color: #ffffff;
+}
+
+/* caixas */ 
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: #DBDBDB;
+}
+
+.containerCustom {
+    width:100%;
+}
+
