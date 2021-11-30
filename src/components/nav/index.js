@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-
+import LogoNav from '../../assets/nuvem.png';
+import IconLupa from '../../assets/lupa.png';
 
 export default function NavComponent() {
     return (
@@ -11,7 +12,7 @@ export default function NavComponent() {
                     
                         <div>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav bg-light" />
-                            <Navbar.Brand href="#">Aplicação de Tempo</Navbar.Brand>
+                            <Navbar.Brand href="#"><img src={LogoNav} alt="Logo Nuvem" width="40px" className="me-2" />Ilhabela, SP</Navbar.Brand>
 
                         </div>
                         {/* <div className="personExibe">
@@ -24,7 +25,7 @@ export default function NavComponent() {
                             </Nav>
                             <Nav>
                                 <Nav.Link href="#">
-                                    Contato
+                                    <img src={IconLupa} alt="Pesquisa" width="25px" />
                                 </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
