@@ -12,7 +12,7 @@ export default function NavComponent() {
                     
                         <div>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav bg-light" />
-                            <Navbar.Brand href="#"><img src={LogoNav} alt="Logo Nuvem" width="40px" className="me-2" />Ilhabela, SP</Navbar.Brand>
+                            <Navbar.Brand href="#"><span>Clima Tempo</span></Navbar.Brand>
 
                         </div>
                         {/* <div className="personExibe">
