@@ -25,7 +25,7 @@ export default function NavComponent() {
                             </Nav>
                             <Nav>
                                 <Nav.Link href="https://beacons.ai/denissouza" target="_blank">
-                                    Contato
+                                    Contatoo
                                 </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
