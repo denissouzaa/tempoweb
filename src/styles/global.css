@@ -1,27 +1,37 @@
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    color: #0f1419;
+    color: #FFFFFF;
 }
 html {
     position: relative;
     min-height: 100%;
 }
+/* cores */
+.bgDark {
+    background-color: #11103A;
+}
+
+.bgDarkCard {
+    background-color: #1B1C48;
+}
+
+
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-color: #FAFAFA;
-  }
-  .footer {
+    background-color: #11103A;
+}
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #ffffff;
-    border-top: 1px solid #DBDBDB;
-  }
+    height: 40px;
+    line-height: 40px; /* Vertically center the text there */
+    background-color: #11103A;
+    border-top: 0px solid #DBDBDB;
+}
 
 .heightPage {
     height: 100%;
@@ -61,7 +71,7 @@ body {
 }
 
 .borderCaixaCupom {
-    border: 1px solid #DBDBDB;
+    border: 0px solid #DBDBDB;
     border-radius: 3px;
 }
 
@@ -76,15 +86,15 @@ body {
 
 /* navbar */ 
 .menu-bar{
-    background: #FFFFFF; 
-    border-bottom: 1px solid #DBDBDB;
+    background: #11103A; 
+    border-bottom: 0px solid #DBDBDB;
 }   
 .navbar-dark .navbar-toggler-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-light .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -133,7 +143,7 @@ body {
 .hr {
     width: 100%;
     height: 1px;
-    background-color: #DBDBDB;
+    background-color: #c4c4c4;
 }
 
 .containerCustom {
