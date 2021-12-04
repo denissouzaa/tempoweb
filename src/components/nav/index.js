@@ -11,7 +11,7 @@ export default function NavComponent() {
 
                         <div>
                             <Navbar.Toggle aria-controls="navbar-nav bg-light" />
-                            <Navbar.Brand href="#"><img className="me-2" src={LogoNav} width="40px"/><span>Clima Tempo</span></Navbar.Brand>
+                            <Navbar.Brand href="#"><img className="me-2" src={LogoNav} width="30em"/><span>Clima Tempo</span></Navbar.Brand>
 
                         </div>
                         {/* <div className="personExibe">

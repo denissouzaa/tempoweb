@@ -43,33 +43,6 @@ body {
     background-color: #FAFAFA;
 }
 
-.bgLeve {
-    color: #555555;
-}
-
-.tagConsultor {
-    background-color: #3B49DF;
-    height: 45px;
-    color: #fff;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.tagSobre {
-    height: 45px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: #262626;
-}
-
 .borderCaixaCupom {
     border: 0px solid #DBDBDB;
     border-radius: 3px;
@@ -79,11 +52,6 @@ body {
     border: 1px solid #DBDBDB;
     border-radius: 3px;
 }
-
-.borderDestaque {
-    border-bottom: 1px solid #D8D8D8;
-}
-
 /* navbar */ 
 .menu-bar{
     background: #11103A; 
@@ -113,28 +81,6 @@ body {
     box-shadow: none;
 }
 
-/* titulos colors */ 
-.tituloDescontos {
-    color: #0f1419;
-    font-weight: bold;
-    font-size: 18px;
-}
-.titleMaster {
-    font-weight: bold;
-}
-.titleRed {
-    color: red;
-}
-.titleTextos {
-    color: #555555;
-}
-
-.titleSecondary {
-    color: #5e5e5e;
-    font-weight: 800;
-    font-size: 1.3em;
-}
-
 .bgWhite {
     background-color: #ffffff;
 }
@@ -148,5 +94,15 @@ body {
 
 .containerCustom {
     width:100%;
+}
+
+.searchForm {
+    background-color: #010409;
+    border: 1px solid #30363d;
+    color: #fff;
+}
+.searchForm:focus {
+    background-color: #0d1117;
+    color: #fff;
 }
 

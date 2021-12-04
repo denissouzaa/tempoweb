@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap';
 import NavComponent from '../../components/nav'
 
 import api from '../../services/api'
+import LocalizaIcon from '../../assets/localiza.png';
+
 
 const apiParams = {
     key: "18b2ee8e1f19d5c929651890aec86896"
@@ -27,13 +29,13 @@ export default function Home() {
                 units: 'metric'
             }
         })
-        .then((res) => {
-            setWeather(res.data)
-        })
-        .catch((error) => {
-            setError(true)
-            console.log("nao achou nada")
-        })
+            .then((res) => {
+                setWeather(res.data)
+            })
+            .catch((error) => {
+                setError(true)
+                console.log("nao achou nada")
+            })
 
     }
 
@@ -49,9 +51,11 @@ export default function Home() {
             .then((res) => {
                 setWeather(res.data)
                 setError(false)
+                setLocation(true)
             })
             .catch((error) => {
                 setError(true)
+                setLocation(false)
             })
     }
 
@@ -73,40 +77,41 @@ export default function Home() {
                         <div className="borderCaixaCupom bgDarkCard p-3 mt-3">
                             <form className="d-flex" onSubmit={e => { e.preventDefault(); newSearch(dadosSearch) }}>
                                 <input
-                                    className="form-control"
+                                    className="form-control searchForm"
                                     type="text"
                                     placeholder="Insira a cidade desejada"
                                     onChange={(event) => setdadosSearch(event.target.value)}
                                     required
                                 />
-                                <input className="btn btn-dark ms-2" type="submit" value="Pesquisar" />
+                                <input className="btn btn-success ms-2" type="submit" value="Pesquisar" />
                             </form>
                         </div>
-
                         {location === true && (
                             <div className="mt-3">
                                 <div className="borderCaixaCupom bgDarkCard p-3 d-flex flex-row">
                                     <div className="w-100 ps-5 pe-5 pt-3 pb-3">
                                         <div className="text-center">
-                                            <div><img alt="Clima Status" src={urlClima} width="70" /></div>
-                                            <div className="fs-3">{weatherDados?.main?.temp}°C</div>
+                                            <div><img alt="Clima Status" src={urlClima} width="80" /></div>
+                                            <h1>{weatherDados?.main?.temp}°C</h1>
                                             <div>{weatherDados?.weather?.[0]?.description.charAt(0).toUpperCase()}{weatherDados?.weather?.[0]?.description.slice(1)}</div>
-                                            <div className="mt-3">{weatherDados?.name}</div>
+                                            <div className="mt-3"><img className="me-1" src={LocalizaIcon} width="17px" />{weatherDados?.name}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="d-flex mt-2">
                                     <div className="w-100 borderCaixaCupom bgDarkCard p-3 me-1 d-flex align-items-center justify-content-center text-center">
-                                        <div>{weatherDados?.wind?.speed} km/h<br />Vel. vento</div>
+                                        <div><b>{weatherDados?.wind?.speed} km/h</b><br />Vel. vento</div>
                                     </div>
                                     <div className="w-100 borderCaixaCupom bgDarkCard p-3 ms-1 d-flex align-items-center justify-content-center text-center">
-                                        <div>{weatherDados?.main?.humidity}%<br />Úmidade</div>
+                                        <div><b>{weatherDados?.main?.humidity}%</b><br />Úmidade</div>
                                     </div>
                                 </div>
                             </div>
                         )}
-                        {location === false || error === true && (
-                            <p>Carregando...</p>
+                        {error === true && (
+                            <div className="borderCaixaCupom bgDarkCard p-3 mt-3 text-center">
+                                <div>Cidade não encontrada, tente novamente!</div>
+                            </div>
                         )}
                     </div>
 
