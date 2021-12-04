@@ -94,7 +94,7 @@ export default function Home() {
                                             <div><img alt="Clima Status" src={urlClima} width="80" /></div>
                                             <h1>{weatherDados?.main?.temp}°C</h1>
                                             <div>{weatherDados?.weather?.[0]?.description.charAt(0).toUpperCase()}{weatherDados?.weather?.[0]?.description.slice(1)}</div>
-                                            <div className="mt-3"><img className="me-1" src={LocalizaIcon} width="17px" />{weatherDados?.name}</div>
+                                            <div className="mt-3"><img className="me-1" alt="Localização Icon" src={LocalizaIcon} width="17px" />{weatherDados?.name}</div>
                                         </div>
                                     </div>
                                 </div>
