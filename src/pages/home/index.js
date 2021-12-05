@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import NavComponent from '../../components/nav'
-
 import api from '../../services/api'
 import LocalizaIcon from '../../assets/localiza.png';
-
 
 const apiParams = {
     key: "18b2ee8e1f19d5c929651890aec86896"
